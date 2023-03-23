@@ -152,7 +152,9 @@ namespace EB_batch
         public Form1()
         {
             InitializeComponent();
-            CheckForIllegalCrossThreadCalls = false;            
+            CheckForIllegalCrossThreadCalls = false;
+            this.TopMost = true;
+           
         }
         private void KillProcess(string processName)
         {
@@ -191,15 +193,6 @@ namespace EB_batch
             openFileDialog1.ShowDialog();
         }
 
-
-        {
-
-        }
-
-        private void folderBrowserDialog1_HelpRequest(object sender, EventArgs e)
-        {
-
-        }
         public void clear_status()
         {
             listBox1.Items.Clear();
